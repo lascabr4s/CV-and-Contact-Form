@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 1.2rem;
+}
+
+body {
+    line-height: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+}
+
+#form {
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(96, 97, 42);
+    /* height:250px; */
+}
+
+.elem {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: gold;
+}
+
+.divlabel,
+.divinpt {
+    display: inline-block;
+}
+
+.divlabel {
+    width: 26%;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.divinpt {
+    width: 70%;
+    margin-left: 2%;
+}
+
+.divselect {
+    display: flex;
+}
+
+label {
+    display: inline-block;
+}
+
+span {
+    font-size: 0.7rem;
+}
+
+#hom {
+    margin-left: 10px;
+}
+
+.envoi {
+    text-align: right;
+}
+
+h1 {
+    position: absolute;
+    top: 10px;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+    vertical-align: middle;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='date'] {
+    vertical-align: text-bottom;
+}
+
+.myBtn {
+    background-color: rgb(18, 85, 9);
+    border: 1px sold cornflowerblue;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.myBtn:hover {
+    cursor: pointer;
+}

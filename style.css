@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "ubuntu";
+    src: url(./Ubuntu/Ubuntu-Regular.ttf);
+}
+
+:root {
+    font-size: 1rem;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 80vw;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./img/fond_blue.png);
+    padding: 35px;
+}
+
+h1 {
+    font-family: ubuntu;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-family: ubuntu;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.header {
+    text-align: center;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.nav ul li {
+    margin-right: 15px;
+    border-top: 3px solid black;
+    border-left: 3px solid #000;
+    border-right: 3px solid black;
+    border-radius: 10px 10px 0 0;
+    padding: 4px;
+    font-size: 1.3rem;
+}
+
+.nav ul li:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+
+/* class pour utiliser dans le JS */
+
+.click {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+
+/* -----------------BODY------------------ */
+
+.popup {
+    height: 500px;
+    width: 500px;
+    background-color: rgb(52, 132, 147);
+    border: 3px solid black;
+    position: absolute;
+    top: calc(55% - 250px);
+    left: calc(50% - 250px);
+    border-radius: 10px;
+}
+
+#entete {
+    background-color: silver;
+    height: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.croix {
+    display: inline-block;
+    background-color: red;
+    height: 86%;
+    width: 4%;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 3px 3px 3px 3px;
+    cursor: pointer;
+    margin-right: 3px;
+    box-shadow: 1px 1px 1px;
+}
+
+.croix:hover {
+    box-shadow: none;
+}
+
+.permutation {
+    background-color: steelblue;
+    border-radius: 3px 3px 3px 3px;
+    padding: 1px 2px 1px 2px;
+    margin-right: 10px;
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+    color: white;
+}
+
+.permutation:hover {
+    box-shadow: none;
+}
+
+#corps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: bisque;
+    height: 95%;
+    border-radius: 0 0 10px 10px;
+}
+
+#sujet {
+    height: 10%;
+}
+
+#sujet,
+#text {
+    width: 70%;
+    border-radius: 5px;
+}
+
+#btn {
+    width: 40%;
+    height: 7%;
+    border-radius: 5px;
+}
+
+#corps table {
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+#corps td {
+    font-size: 1.4rem;
+    padding: 10px 0 10px 10px;
+}
+
+#corps td {
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+#corps td:nth-child(odd) {
+    text-align: end;
+}
+
+#corps tr:first-child {
+    background-color: rgb(72, 179, 72);
+}
+
+#corps tr:nth-child(2) {
+    background-color: gold;
+}
+
+#corps tr:nth-child(3) {
+    background-color: crimson;
+}
+
+#corps tr:nth-child(3) td:first-child {
+    vertical-align: top;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+.art_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+article,
+aside {
+    text-align: justify;
+}
+
+#art1 {
+    width: 75%;
+}
+
+#as1 {
+    width: 20%;
+    background-color: lightblue;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+}
+
+#os_div,
+#pl_div,
+#fl_div,
+#am_div {
+    display: none;
+}
+
+
+/* #fl_div progress {
+    height: 30px;
+    margin-left: 10px;
+} */
+
+progress {
+    border-radius: 7px;
+    /* width: 80%; */
+    height: 22px;
+    /* margin-left: -11.5%; */
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+progress::-webkit-progress-bar {
+    background-color: rgb(243, 85, 85);
+    border-radius: 7px;
+}
+
+progress::-webkit-progress-value {
+    background-color: rgb(120, 196, 120);
+    border-radius: 7px;
+    /* box-shadow: 1px 1px 5px 3px rgba(255, 0, 0, 0.8); */
+}
+
+.jauge {
+    display: inline-block;
+    width: 45%;
+    text-align: right;
+}
+
+.jauge1 {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+
+#fl_div>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+a {
+    color: black;
+    font-size: 1.1rem;
+}
+
+.contact {
+    text-align: center;
+}
+
+.plus {
+    cursor: pointer;
+}
+
+.mondiv,
+.mondiv2,
+.mondiv3 {
+    padding: 20px;
+}
+
+.mondiv3 {
+    display: flex;
+    flex-direction: column;
+}

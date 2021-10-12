@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Les formulaires</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style2.css">
+    <script src="./jquery360.js"></script>
+    <script src='./js2.js' async></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>Les formulaires HTML</h1>
+        <div id='form'>
+            <!-- <form method="post" action="traitement.php" autocomplete="on" id='dd'> -->
+
+            <div class='elem'>
+                <div class='divlabel'>
+                    <label for='nom'>Nom : </label>
+                </div>
+                <div class='divinpt'>
+                    <input type='text' name='nom' id='nom' maxlength='20' required>
+                    <span id='missnom'></span><br>
+                </div>
+            </div>
+
+            <div class='elem'>
+                <div class='divlabel'>
+                    <label for='prenom'>Prenom : </label>
+                </div>
+
+                <div class='divinpt'>
+                    <input type='text' name='prenom' id='prenom' maxlength='20' required>
+                    <span id='missprenom'></span><br>
+                </div>
+            </div>
+            <div class='elem'>
+                <div class='divlabel'>Genre :</div>
+                <div class='divinpt'>
+                    <label>Femme :</label>
+                    <input type='radio' id="femme" name='genre' value="femme" checked>
+                    <label id='hom'>Homme :</label>
+                    <input type='radio' id="homme" name='genre' value="homme">
+                </div>
+            </div>
+            <div class='elem'>
+                <div class='divlabel '>
+                    <label for='pays'>Pays : </label>
+                </div>
+                <div class='divinpt divselect'>
+                    <select name='pays' id='pays' required>
+							<option value="">Choix du pays</option>
+							<option value="FR">France</option>
+							<option value="DE">Allemagnes</option>
+							<option value="GB">Royaume-Uni</option>
+							<option value="ES">Espagne</option>
+							<option value="BE">Belgique</option>
+						</select>
+                    <span id='misspays'></span><br>
+                </div>
+            </div>
+            <div class='elem'>
+                <div class='divlabel'>
+                    <label for='comment'>Commentaire : </label>
+                </div>
+                <div class='divinpt divselect'>
+                    <textarea name="comment" id='comment' placeholder='entrez vos commentaires'></textarea>
+                    <span id='misscomment'></span><br>
+                </div>
+
+            </div>
+            <div class='elem'>
+                <div class='divlabel'>
+                    <label for='dt'>Date :</label>
+                </div>
+                <div class='divinpt'>
+                    <input type='date' name='dt' id='dt' required>
+                    <span id='missdt'></span><br>
+                </div>
+
+            </div>
+            <div class='elem'>
+                <div class='divlabel'>
+                    <label for='age'>Age :</label>
+                </div>
+                <div class='divinpt'>
+                    <input type='number' name='age' id='age' required>
+                    <span id='missage'></span><br>
+                </div>
+
+            </div>
+            <div class='elem'>
+                <div class='divlabel'><label for='dt'>Musique :</label></div>
+                <div class='divinpt'>
+                    <label for='jazz'>Jazz : </label>
+                    <input type='checkbox' name='jazz' id='jazz'>
+                    <label for='electro'>Electro : </label>
+                    <input type='checkbox' name='electro' id='electro'>
+                    <label for='opera'>Opéra : </label>
+                    <input type='checkbox' name='opera' id='opera'>
+                    <label for='disco'>Disco : </label>
+                    <input type='checkbox' name='disco' id='disco'>
+                </div>
+            </div>
+            <div class='envoi'>
+                <span id="response"></span>
+                <button class='myBtn' id='bouton_envoi'>Valider</button>
+            </div>
+            <!-- </form> -->
+
+        </div>
+    </div>
+</body>
+
+</html>

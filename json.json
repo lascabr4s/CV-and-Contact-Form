@@ -1,0 +1,58 @@
+{
+    "nom": "POPELIN",
+    "prenom": "Antoine",
+    "mail": "lascabrastonio@gmail.com",
+    "tel": "0643527997",
+    "adresse": {
+        "num": 764,
+        "rue": "vc1 de Belmontet",
+        "zip": 82230,
+        "ville": "La Salvetat Belmontet"
+    },
+    "exp": [{
+            "datedeb": "01/04/2007",
+            "datefin": "30/04/2021",
+            "resume": "Sous directeur",
+            "description": "Responsable d'un complexe hôtelier de 2 hôtels, en charge de la gestion de planning et de l'exploitation",
+            "entreprise": "Louvre Hotel"
+        },
+        {
+            "datedeb": "01/02/2005",
+            "datefin": "30/03/2007",
+            "resume": "Cariste",
+            "description": "En charge du déchargement des wagons fret, et chargement des remorques en produits de consommation",
+            "entreprise": "DistriChrono"
+
+        },
+        {
+            "datedeb": "01/02/2000",
+            "datefin": "30/01/2005",
+            "resume": "Barman",
+            "description": "Service de boisson",
+            "entreprise": "Grain de Kfé"
+        }
+    ],
+    "formation": [{
+            "datedeb": "02/06/2021",
+            "datefin": "07/06/2022",
+            "ecole": "BGE Sud Ouest",
+            "titre": "Titre professionnel Développeur web et web mobile"
+        },
+        {
+            "datedeb": "01/09/2015",
+            "datefin": "31/05/2016",
+            "ecole": "U université",
+            "titre": "Titre professionnel Assistant d'exploitation"
+        }
+    ],
+    "autres": {
+        "hobbies": [
+            "Running",
+            "Astronomie"
+        ],
+        "langues": [
+            "Anglais",
+            "Français"
+        ]
+    }
+}
